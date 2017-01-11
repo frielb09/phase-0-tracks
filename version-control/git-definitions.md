@@ -9,7 +9,14 @@ Version Control: It is software that keeps track of projects; it records the cha
 Branch: A branch is a "side feature" it allows you to work on a project but not affecting the original until you merge the files. You would want to use one to show your additions to the work on a project. 
 
 * What is a commit? What makes a good commit message?
+
 A commit is like a save point or a snapshot of the additions that you have made. This saved record can then be compared, shared or reverted to. It saves on the local repository and doesnt merge. 
 
 * What is a merge conflict?
 Merge Conflict: it is an issue when trying to merge files, typically occuring when competing line changes are made to the same line of a file or when a file is deleted. 
+
+* What is a merge conflict?
+
+
+>>>>>>> Feature-Branch
+Hola 
