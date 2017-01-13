@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Form</title>
+</head>
+<body>
+<form name="food" action="success.html" method="post">
+	<fieldset>
+		<div>
+			<label>Full Name:</label>
+			<input type="text" name="fullname">
+		</div>
+
+		<div>
+      <label>Email:</label>
+      <input type="email" name="email">
+    </div>
+
+    <div>
+      <label>Password:</label>
+      <input type="password" name="password">
+    </div>
+  </fieldset>
+
+  <div>
+  	<label>What is your favorite Italian food</label>
+  	<select name="Italian">
+  		<option value="food">Ravioli</option>
+  		<option value="food">Spaghetti and Meatballs</option>
+  		<option value="food">Gnocchi</option>
+  	</select>
+  </div>
+
+  <textarea name="textarea"
+  		rows="5" cols="25">What kind of sauce do you want</textarea>
+<div>
+  <label>Do you want a dessert</label><br>
+  	<input type="radio"
+  		name="dessert" value="Yes" checked>Yes<br>
+  	<input type="radio"
+  		name="dessert" value="No" >No<br>
+</div>
+  <button type="submit">Save this food</button>
+</form>
+</body>
+</html>
