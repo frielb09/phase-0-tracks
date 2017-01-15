@@ -15,8 +15,6 @@ A commit is like a save point or a snapshot of the additions that you have made.
 * What is a merge conflict?
 Merge Conflict: it is an issue when trying to merge files, typically occuring when competing line changes are made to the same line of a file or when a file is deleted. 
 
-* What is a merge conflict?
 
+blah 
 
->>>>>>> Feature-Branch
-Hola 
