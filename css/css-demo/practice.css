@@ -21,3 +21,7 @@ section#contact-info {
 .new {
 	font-size: .8em;
 }
+
+ul:hover > li {
+	display: list-item;
+}
