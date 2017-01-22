@@ -26,9 +26,8 @@ cite {
 section#external-links {
 position: fixed;
 top: 80px;
-width: 15%;
+width: 200px;
 height: 100%;   
-
 text-decoration: none;;
 font-size: 18px;
 color: red;
