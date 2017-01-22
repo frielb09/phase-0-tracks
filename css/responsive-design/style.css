@@ -1,5 +1,5 @@
 body {
-  width: 960px;
+  max-width: 96%;
 }
 
 
@@ -20,23 +20,24 @@ cite {
 }
 
 #external-links {
-  width: 200px;
+  width: 20%;
 }
 
 section#external-links {
+display: block, vertical-align;  
 position: fixed;
 top: 80px;
-width: 200px;
+width: 20%;
 height: 100%;   
-text-decoration: none;;
-font-size: 18px;
-color: red;
+text-decoration: none;
+font-size: 10px;
+color: blue;
 z-index: 0;
 }
 
 section#external-links a {
-font-size: 14px;
-padding-left: 15px;
+font-size: 10px;
+padding-left: 10px;
 padding-right: 15px;
 padding-top: 30px;
 color: black;
@@ -52,9 +53,30 @@ text-align: left;
 font-size: 8px;
 }
 
+main {
+width: 75%;
+text-align: justify;
+list-style-type: none;
+font-size: 12pt;
+padding-top: 55px;
+padding-bottom: 30px;
+padding-left: 12.5%;
+margin-left: 5%;
+margin-right: 2.5%;  
+line-height:2;
+}
+  
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like, 
-but it's optional! */
+but it's optional! 
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}
+
+*/
 img {
   width: 100%;
 }
@@ -69,3 +91,18 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+
+
+@media screen and (max-width: 500px) {
+  blockquote {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section#external-links {
+    font-size: 6px;
+    background-color: orange;
+  }
+}
+
