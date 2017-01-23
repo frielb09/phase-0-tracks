@@ -92,15 +92,25 @@ figcaption {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   blockquote {
     background-color: blue;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   section#external-links {
+    width: 10%;
     font-size: 6px;
     background-color: orange;
   }
 }
+
+@media screen and (max-width: 700px) {
+  main h1 {
+    font-size: 15px;
+  }
+}
+
+
+
