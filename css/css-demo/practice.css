@@ -22,6 +22,6 @@ section#contact-info {
 	font-size: .8em;
 }
 
-ul:hover > li {
-	display: list-item;
+section#personal-objective h2 {
+  text-shadow: orange 3px 3px;
 }
