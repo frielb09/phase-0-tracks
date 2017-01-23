@@ -15,39 +15,36 @@ cite {
   margin-top: 10px;
 }
 
-#external-links ul {
-  list-style-type: none;
-  padding-left: 0px;
-}
 
-#external-links {
-  width: 20%;
-}
 
 section#external-links {
 display: block, vertical-align;  
 position: fixed;
-top: 80px;
+top: 90px;
 width: 20%;
 height: 100%;   
 text-decoration: none;
 font-size: 10px;
 color: blue;
-z-index: 0;
 }
 
 section#external-links a {
 font-size: 10px;
-padding-left: 10px;
+padding-left: 0px;
 padding-right: 15px;
-padding-top: 30px;
+padding-top: 0px;
 color: black;
 text-decoration: none;
 text-align: center;
 }
 
+section#external-links ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
 section#external-links li {
-padding-top: 10%;
+padding-top: 5%;
 text-decoration: none;
 list-style-type: none;
 text-align: left;
