@@ -1,24 +1,26 @@
 body {
-	max-width: 96%;
+	max-width: 100%;
+	max-height: 100%
 	background-color: orange;
 	
 }
 
 section.column-1 {
-		float:left;
-		background-color: green;
-		position: relative;
-  		width: 45%;
-  		height: 100%;
+		background-color: blue;
+		width: 40%;
+		margin: 2%;
+		padding: 2%;
+		display: inline-block; vertical-align: top;
   		
 }
 
 section.column-2 { 
-		float:right;
-		background-color: blue;
-		height: 100%;
-		width: 50%;
-		padding-right: 2%;
+		background-color: yellow;
+		width: 40%;
+		margin: 2%;
+		padding: 2%;
+		display: inline-block; vertical-align: top;
+  		
 }
 
 header {
@@ -28,5 +30,6 @@ header {
 
 footer {
 	background-color: gray;
-	clear:both;
+	bottom: 0%;
+	text-align: center;
 }
