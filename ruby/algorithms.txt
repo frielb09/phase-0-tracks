@@ -1,0 +1,9 @@
+Delaware Tech:
+
+	1) Enter into Delaware Tech - 20 paces
+	2) Ask public-safety “where is (intended destination)”
+	3) Turn right, go 20 paces
+	4) Turn left, go 10 paces
+	5) Turn right, go 100 paces
+	6) Turn left, go 3 paces
+	7) 
