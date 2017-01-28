@@ -1,9 +1,21 @@
-Delaware Tech:
 
-	1) Enter into Delaware Tech - 20 paces
-	2) Ask public-safety “where is (intended destination)”
-	3) Turn right, go 20 paces
-	4) Turn left, go 10 paces
-	5) Turn right, go 100 paces
-	6) Turn left, go 3 paces
-	7) 
+
+	1) When elevator doors open, enter elevator.
+	2) Spin till facing elevator doors. 
+	3) Locate integer button list. 
+	4) Press integer button for intended destination. 
+	5) Locate integer floor visual display.
+	6) Till integer floor visual display reaches intended floor integer, 
+		stay in elevator(unless directed otherwise).
+	7) When floor visual displays integer of intended destination, after elevator 		doors open, exit elevator. 
+		
+
+
+Common Task in life: Feeding pets 
+	(constructed container with trap door to release food into bowl) 
+	1) Trap door release:
+		-Until timer integer reaches mark, keep closed. 
+	- When timer integer reaches mark:
+		- open trap door
+		- wait 2 seconds
+		- close trap door after 2 seconds 
