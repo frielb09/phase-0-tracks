@@ -3,17 +3,15 @@
 p "What is your name?"
 	vampire_name = gets.chomp 
 	
-	if vampire_name == "Tu Fang" then
+	if vampire_name == "Tu Fang" 
+		p "Most definitely a vampire"
+	elsif vampire_name == "Drake Cula"
 		p "Most definitely a vampire"
 	else 
 		p "Probably not a vampire"
 	end 
 
-	if vampire_name == "Drake Cula"
-		p "Most definitely a vampire"
-	else 
-		p "Probably not a vampire"
-	end 
+
 		
 
 p "How old are you?" 
