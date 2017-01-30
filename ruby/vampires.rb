@@ -1,4 +1,55 @@
 #Get Vampire information
+puts "How many employees will be processed?"
+  employees = gets.chomp.to_i
+  
+  employees.times do 
+
+p "What is your name?"
+	vampire_name = gets.chomp 
+
+p "How old are you?" 
+	vampire_age = gets.chomp.to_i
+
+p "What year were you born?"
+	vampire_year = gets.chomp.to_i
+
+p "Our company cafeteria serves garlic bread. Should we order some for you? Yes or No?"
+  yes_or_no = gets.chomp 
+  
+p "Would you like to enroll in the company's health insurance? Yes or No"
+  yes_or_no2 = gets.chomp 
+  
+p "Do you have any allergies?"
+  allergies = true 
+
+  while allergies
+    p "List them and type 'done' to continue"
+    allergies = gets.chomp 
+    
+    break if allergies == "sunshine"
+    break if allergies == "done"
+  end 
+  
+  year_of_today = 2017 
+  
+case 
+  when allergies == "sunshine"
+    p "Probably a vampire."
+  when vampire_name == "Tu Fang" || vampire_name == "Drake Cula"
+    p "Definitely a vampire!"
+  when vampire_year + vampire_age == year_of_today && (yes_or_no == "Yes" || yes_or_no2== "Yes")
+    p "Probably not a vampire."
+  when vampire_year + vampire_age != year_of_today && yes_or_no == "no" && yes_or_no2 == "no"
+ 		p "Almost certainly a vampire."	
+ 	when vampire_year + vampire_age != year_of_today && (yes_or_no == "no" || yes_or_no2 == "no")
+ 		p "Probably a vampire."
+ 	else
+		p "Results inconclusive."
+ 	end
+ 
+ 	p "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
+ end 
+
 
 p "What is your name?"
 	vampire_name = gets.chomp 
@@ -12,7 +63,6 @@ p "What is your name?"
 	end 
 
 
-		
 
 p "How old are you?" 
 	vampire_age = gets.chomp.to_i
@@ -31,51 +81,3 @@ p "What year were you born?"
 	else
 		p "Probably a vampire"
 	end 
-
-p "Our company cafeteria serves garlic bread - Should we order some for you? (y/n)"
-	vampire_garlic = gets.chomp 
-
-p "Would you like to enroll in the company's health insurance? (y/n)"
-	vampire_health = gets.chomp 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class Vampire
-	@@no_of_customers=0
-end
-
-vamp1 = Vampire. new 
-vamp2 = Vampire. new
-vamp3 = Vampire. new
-
-
-
-class Vampire
-	@@no_of_customers=0
-	def initialize(vampire_name, vampire_age, vampire_year, vampire_garlic, vampire_health)
-		@vamp_name=vamp_name
-		@vamp_age=vampire_age
-		@vamp_year=vampire_year
-		@vamp_gar=vampire_garlic
-		@vamp_hlth=vampire_health
-	end 
-end 
-
-if vampire_name == "Tu Fang"
-	puts "Definitely a vampire"
-end 
-
-if vampire_name == "Drake Cula"
-	puts "Definitely a vampire"
