@@ -1,24 +1,23 @@
-def hamster_info(name, loud, fur, perc, age)
-  p "The name of your hamster is, #{name}"
-  p "Your hamster is, #{loud}"
-  p "The color of your hamster is, #{fur}"
-  p "Your hamster is, #{perc}"
-  p "The estimated age of your hamster is, #{age}"
-end 
 
-p "What is the name of your hamster?"
+p "What is your Hamster Name"
 name = gets.chomp 
 
-p "Is your hamster loud? (1 being not loud, 10 being loud)"
+p "Is your hamster loud? (y/n)"
 loud = gets.chomp 
 
-p "What is the fur color of your hamster?"
+p "What is the fur color on the hamster?"
 fur = gets.chomp 
 
-p "Is your hamster nice? (y/n)"
-perc = gets.chomp 
+p "On the scale of 1-5 is your hamster friendly? (1 being not friendly, 5 being friendly"
+scale = gets.chomp.to_i
 
-p "What is the estimated age of your hamster?"
-age = gets.chomp 
+p "What do you think is the estimated age of your hamster?"
+age = gets.chomp.to_i
 
-p hamster_info(name, loud, fur, perc, age)
+#Answers to clerk 
+
+p "The name of your hamster is, #{name}"
+p "Your hamster is, #{loud}"
+p "The color of your hamster is, #{fur}"
+p "Your hamster is, #{scale}"
+p "The estimated age of your hamster is, #{age}"
