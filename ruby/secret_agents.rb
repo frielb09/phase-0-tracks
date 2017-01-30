@@ -50,12 +50,26 @@ def decrypt (input)
 puts "Secret Agent, What is your name?"
 name = gets.chomp 
 
-puts "Would you like to decrypt or encrypt a password? (y/n)"
-password = gets.chomp
+valid_input = false
+until valid_input 
+  puts "Would you like to decrypt or encrypt a password? Yes or No?"
+    password = gets.chomp
+
+    if password == "Yes" 
+      puts "Thank you!"
+      valid_input = true
+    elsif password == "No"
+      puts "But we need to!"
+      valid_input = false
+    else
+      puts "So, are you? Yes or No."
+  end
+end
 
 puts "What is your password?"
 user_password = gets.chomp
 
+puts name, password, user_password
 
 
 
