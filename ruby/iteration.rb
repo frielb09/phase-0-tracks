@@ -1,3 +1,11 @@
+students = [ 'Drake', 'Snoopdog', 'Susan', 'Kanye', 'Sara']
+  x=1 
+
+  students.each do |name|
+   puts "#{x}. #{name}"
+      x += 1 
+  end 
+
 #### array 
 puts "Original Cities:"
 us_cities = ["New York", "San Francisco", "Boston", "Seattle"]
@@ -75,86 +83,32 @@ puts b.has_value?("six")
     puts "d doesn't equal f" 
   end
 
+student_grades = [
+  { name: 'Drake', score: 100 },
+  { name: 'Miley', score: 57 },
+  { name: 'Joe Biden', score: 120 },
+  { name: 'Lil Wayne', score: 58 },
+]
 
+result = student_grades.select do |hash|
+  hash[:score] >= 100
+end
 
-class Hash
-	  def delete_value(value)
-	    delete_if { |k,v| v == value }
-	  end
-	 end 
+puts result
 
-	h = {'apple' => 'green', 'potato' => 'red', 'sun' => 'yellow',
-	     'katydid' => 'green' }
-	h.delete_value('green')
-	h  
+ class Hash
+    def delete_value(value)
+      delete_if { |k,v| v == value }
+    end
+  end
 
-suitcase_items = []
-
-puts "Suitcase Assistant!"
-
-loop do 
-  puts "Enter an item (or type 'exit'):"
-  input = gets.chomp 
-  break if input == 'exit'
-  suitcase_items << input
-end 
-
-puts "Here is your packing list:"
-puts suitcase_items
-
-
-animal_crackers = [
-  'bunny', 
-  'camel',
-  'elephant',
-  'giraffe',
-  ]
-
-index = 0 
-while index < animal_crackers.length 
-  puts "The T-Rex has bitten the #{animal_crackers[index]}'s head off!"
-  index += 1 
-end 
-
-
-sports = [
-  'Basketball',
-  'Football',
-  'Hockey',
-  'Soccer',
-  'Baseball',
-  ]
-   sports.each do |sport|
-  puts "This is a sport! #{sport}!!!"
-end 
-### One block parameter(sport) for the Array 
+  h = {'Eggs & Ham' => 'green', '100' => 'red', 'sun' => 'yellow',
+       '50' => 'red' }
+  h.delete_value('red')
+  h                      
 
 
 
-
-cities = {
-  'Chicago' => 'intact',
-  'Seattle' => 'intact',
-  'New York' => 'intact',
-  'Boston' => 'intact',
-}
-#### the key and value are the variables city and status, city being
-#### the key and status being what we are changing to the value
-  cities.each do |city, status|
-    puts "#{city}, is safe!!"
-  end 
-
-### Methods in Ruby can take blocks with yield!
-### For loop do ( 3.times { yield })
-  def say_hello 
-    puts "Why, hello there!"
-    yield("Bob", "Joe")
-  end 
-say_hello { |name1, name2| puts "Great to see you, #{name1}, and #{name2}!" }
-### Set up block parameters with new input 
-### The Value of a Block Parameter results to nil if not given
-## say_hello { puts "Great to see you!" }
-### or you can put name1 = "Bob" name2 = Joe and yield(name1, name2)
                                  
 
 
