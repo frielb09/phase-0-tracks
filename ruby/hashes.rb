@@ -25,7 +25,7 @@ puts "What is your address?"
 puts "What is your age?"
  application[:age] = gets.to_i
  
-puts "What is the number of your children?"
+puts "Do you have children? How many?"
  application[:number_of_children] = gets.to_i
  
  
@@ -51,7 +51,7 @@ when "age"
  	puts "What is your age?"
      application[:age] = gets.to_i
 when "children"
- 	puts "What is the number of your children?"
+ 	puts "Do you have children? How many?"
  	application[:number_of_children] = gets.to_i
 when "decor theme"
  	puts "What is your decor theme? (1) for Contemporary. (2) for Mid-Century Modern. (3) for Colonial"
