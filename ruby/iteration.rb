@@ -1,3 +1,5 @@
+#Release1
+ 
 #### Method iteration 
 def iteration_yield 
    puts "THIS IS A TEST!!!!"
@@ -7,15 +9,6 @@ end
  
 iteration_yield {|test1, test2| puts "#{test1} #{test2} This is just a monthly test"}
 
-####### Array iteration
-
-students = [ 'Drake', 'Snoopdog', 'Susan', 'Kanye', 'Sara']
-  x=1 
-
-  students.each do |name|
-   puts "#{x}. #{name}"
-      x += 1 
-  end 
 
 #### Array Each
 puts "Original Cities:"
@@ -55,20 +48,28 @@ convert = Hash[more_cities.map { |key, value| [key.to_sym, value.upcase] } ]
 puts more_cities
 puts convert
 
+#Release2
+#item1
+#array methd that deletes numbers greater than 80
 ### Array Delete
 scores = [ 97, 80, 43, 75 ]
 scores.delete_if { |score| score < 80 }
 
 
 #### Hash Delete
+#hash method that deletes numbers less than 2
 numbers = {1 => 'one', 2 => 'two', 3 => 'three'}
 numbers.delete_if { |number| number < 2 }
 
+
+
 ### Array Drop 
+#item2
+#filters for cetain condition array
 a = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 puts a.drop_while {|i| i < 7 } 
 
-#### Hash "Identifier"
+#### Hash "Identifier" certain condition
 b = {
   1 => 'one',
   2 => 'two',
@@ -81,6 +82,7 @@ puts b.has_key?(4)
 puts b.has_value?("six")
 
 #### Array false 
+### #item3 filters arrays satifying certain conditions (comparing)
  d = [1, 2, 3]
   e = [1, 2, 3, 4]
   f = [1, 2, 2]
@@ -93,6 +95,21 @@ puts b.has_value?("six")
   else 
     puts "d doesn't equal f" 
   end
+
+
+
+
+#item4 -method removes items from a data structure until the condition 
+#in the block evaluates to false, then stops
+####### Array iteration
+
+students = [ 'Drake', 'Snoopdog', 'Susan', 'Kanye', 'Sara']
+  x=1 
+
+  students.each do |name|
+   puts "#{x}. #{name}"
+      x += 1 
+  end 
 
 student_grades = [
   { name: 'Drake', score: 100 },
