@@ -1,3 +1,14 @@
+#### Method iteration 
+def iteration_yield 
+   puts "THIS IS A TEST!!!!"
+   yield("RED ALERT!!!" "RED ALERT!!!")
+   puts "End of Test"
+end
+ 
+iteration_yield {|test1, test2| puts "#{test1} #{test2} This is just a monthly test"}
+
+####### Array iteration
+
 students = [ 'Drake', 'Snoopdog', 'Susan', 'Kanye', 'Sara']
   x=1 
 
@@ -6,7 +17,7 @@ students = [ 'Drake', 'Snoopdog', 'Susan', 'Kanye', 'Sara']
       x += 1 
   end 
 
-#### array 
+#### Array Each
 puts "Original Cities:"
 us_cities = ["New York", "San Francisco", "Boston", "Seattle"]
 puts us_cities
@@ -27,7 +38,7 @@ us_cities.map! { |z| "#{z}, earthly cities" }
 puts us_cities
 
 
-###### hash 
+###### Hash Each
 puts "Original Basketball Cities:"
 more_cities = {
     "Los Angeles" => "Lakers",
@@ -96,6 +107,8 @@ end
 
 puts result
 
+
+### Class hash example 
  class Hash
     def delete_value(value)
       delete_if { |k,v| v == value }
